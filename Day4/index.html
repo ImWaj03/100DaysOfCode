@@ -1,60 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Day3</title>
+    <title>Document</title>
 </head>
 <body>
 
-    <!-- Download -->
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    v
-    <var>v
-        <h1>Download - download (a, area)</h1>
-        <a href="/images/myw3schoolsimage.jpg" download>
-        <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-        </a>
-        <h1>Download - download (a, area)</h1>
-        <a href="/images/myw3schoolsimage.jpg" download>
-        <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-        </a>
+    <!-- Href Lang -->
+    <h1>Href Lang - hreflang (a, area, link)*</h1>
+    <a href="https://www.google.com" hreflang="en">Google</a>
+    <hr>
 
-            <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    v
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
-    <h1>Download - download (a, area)</h1>
-    <a href="/images/myw3schoolsimage.jpg" download>
-    <img src="./Images/Thor.jpg" alt="W3Schools" width="320" height="200">
-    </a>
+    <!-- Id -->
+    <h1>Id - id (Global)*</h1>
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
     
-    </var>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+    <hr>
+
+    <!-- Kind -->
+    <h1>Kind - kind (track)*</h1>
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <p>It specifies the kind of text track.</p>
+    <hr>
+
+    <!-- Label -->
+    <h1>Label - label ( track, option, optgroup)</h1>
+    <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    <hr>
+
+    <!-- Loop -->
+    <h1>Loop - loop (audio, video)</h1>
+    <audio controls loop>
+        <source src="./Audios/Otha Pathukalam Dialogue - Vikram.mp3" type="audio/mp3">
+    </audio>
+    <hr>
+
+    <!-- Max  -->
+    <h1>Max - max (input, meter, progress)*</h1>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+    <hr>
+
+    <!-- Max Length -->
+    <h1>Maximum Length - maxlength (input, textarea)*</h1>
+    <input type="text" id="username" name="username" maxlength="10"><br><br>
+    <hr>
+
+    <!-- Method -->
+    <h1>Method - method (from)*</h1>
+    <form action="/action_page.php" method="get"></form>
+    <p>Our data method</p>
+    <hr>
+
+    <!-- Min -->
+    <h1>Minimum - min (input, meter)*</h1>
+    <meter min="0" low="40" high="90" max="100" value="95"></meter>
+    <hr>
+
+    <!-- Multiple -->
+    <h1>Multiple - multiple (input, select)*</h1>
+    <input type="file" id="files" name="files" multiple><br><br>
+    <p>We can choose multiple items</p>
+    <hr>
+
+    <!-- Muted -->
+    <h1>Muted - muted (Audio, Video)*</h1>
+    <audio controls muted>
+        <source src="./Audios/Otha Pathukalam Dialogue - Vikram.mp3" type="audio/mp3">
+    </audio>
+    <hr>
+
+    <!-- Name -->
+    <h1>Name - name(button, fieldset, form, iframe, input, map, meta, object, output, param, select, textarea)*</h1>
+    <p name="para">Name of the element</p>
+    <hr>
+
+    <!-- No Validate -->
+    <h1>No Validate - novalidate (form)*</h1>
+    <form action="/action_page.php" novalidate>
+        E-mail: <input type="email" name="user_email">
+        <input type="submit">
+    </form>
+    <hr>
+
+    <!-- Open -->
+    <h1>Open - open (details)*</h1>
+    <details open>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+    <hr>
+
+    <!-- Pattern -->
+    <h1>Pattern - pattern (input)*</h1>
+    Country code: <input type="text" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code">
+
+    <!-- Place Holder -->
+    <h1>Place Holder - placeholder (input, textarea)*</h1>
+    Country code: <input type="text" name="country_code" placeholder="+91">
+    <hr>
+
+    <!-- Poster -->
+    <h1>Poster - poster (video)*</h1>
+    <video width="320" height="240" poster="./Images/download.png" controls>
+        <source src="./Videos/friday.mp4" type="video/mp4">tag.
+    </video>
+    <hr>
+
+    <!-- Read Only -->
+    <h1>Read Only - readonly (input, textarea)*</h1>    
+    <input type="text" id="country" name="country" value="India" readonly>
+    <hr>
+
+    <!-- Required -->
+    <h1>Required - required (input, select, textarea)*</h1>
+    <form action="">
+    <select required>
+        <option value="">None</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- Reversed -->
+    <h1>Reversed - reversed (ol)*</h1>
+    <ol reversed>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+
+    <!-- Rows -->
+    <h1>Rows - rows (textarea)*</h1>
+    <textarea rows="4" cols="50">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus nam possimus laborum obcaecati error rerum. Cupiditate minus aliquid sit, consequuntur nemo maiores esse perspiciatis sapiente, blanditiis id eligendi ab?
+    </textarea>
+    <hr>
+
+    <!-- Row Span -->
+    <h1>Row Span - rowspan (td, th)*</h1>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
+    <h1>The td rowspan attribute</h1>
+    <table>
+        <tr>
+        <th>Month</th>
+        <th>Savings</th>
+        <th>Savings for holiday!</th>
+        </tr>
+        <tr>
+        <td>January</td>
+        <td>$100</td>
+        <td rowspan="2">$50</td>
+        </tr>
+        <tr>
+        <td>February</td>
+        <td>$80</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Sandbox -->
+    <h1>Sand Box - sandbox (iframe)*</h1>
+    <iframe src="demo_iframe_sandbox.htm" sandbox>
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+    <hr>
+
+    <!-- Selected -->
+    <h1>Selected - selected (option)*</h1>
+    <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option>
+        <option value="vw">VW</option>
+        <option value="audi" >Audi</option>
+    </select>
+    <hr>
+
+    <!-- Size -->
+    <h1>Size - size (input, select)*</h1>
+    <form action="/action_page.php">
+        Email: <input type="text" name="email" size="35"><br>
+        PIN: <input type="text" name="pin" maxlength="4" size="4"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- Spell Check -->
+    <h1>Spell Check - spellcheck (Global)*</h1>
+    <p contenteditable="true" spellcheck="true">It will check our input content whether mistake or not</p>
+    <hr>
+
+    <!-- Source -->
+    <h1>Source - src (audio, embed, iframe, img, input, script, source, track, video)*</h1>
+    <img src="./Images/download.png" alt="Smiley face">
+    <hr>
+
+    <!-- Start  -->
+    <h1>Start - start (ol)*</h1>
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+
+    <!-- Step -->
+    <h1>Step - step (input)*</h1>
+    <form action="/action_page.php">
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+        <input type="submit">
+    </form>
+    <hr>
+
+    <!-- Style -->
+    <h1>Style - style(Global)*</h1>
+    <p style="color:rgb(255, 4, 142)">This is a paragraph.</p>
+    <hr>
+
+    <!-- Target -->
+    <h1>Target - target (a, area, base, form)*</h1>
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+    <hr>
+
+    <!-- Title -->
+    <h1>Title - title (Global)*</h1>
+    <p title="para">Extra info about element.</p>
+    <hr>
+
+    <!-- Translate -->
+    <h1>Translate - translate (Global)*</h1>
+    <p translate="no">Don't translate this!</p>
+    <hr>
+
+    <!-- Type -->
+    <h1>Type - type (a, button, embed, input, link, menu, object, script, source, style)</h1>
+    <hr>
+
+    <!-- Width -->
+    <h1>Width - width(canvas, embed, iframe, img, input, object, video)*</h1>
+    <img src="./Images/download.png" alt="Smiley face" height="42" width="42">
+    <hr>
 </body>
 </html>
