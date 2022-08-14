@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,342 +8,139 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- Drag Events -->
+    <h1 style="text-align: center;">Drag Events</h1>
 
-    <!-- HTML Tags -->
-    <h1 style = "text-align:center;">Basic HTML Tags </h1>
-
-    <h3>DOCTYPE - Type of the document</h3>
-    <h3>html - Root tag of the html</h3>
-    <h3>head - Inside we can give document related informaion</h3>
-    <h3>title - Browser tab bar name</h3>
-    <h3>body - Inside this tag we can give all our tags & attributes</h3>
-    <hr>
-
-    <!-- HTML Headings -->
-    <h1>Headings - h1 to h6</h1>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    <hr>
-
-    <!-- Paragraph -->
-    <h1>Paragraph - p</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos et tenetur, veritatis, dicta totam itaque, eveniet porro odio fuga veniam aut. Quaerat placeat magnam ad. Debitis explicabo illum cumque.</p>
-    <hr>
-
-    <!-- Line Breaks -->
-    <h1>Break Tag - br</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nulla, quae animi rerum dicta explicabo voluptas reprehenderit. Eum alias ipsum, exercitationem sit perspiciatis vitae <br> porro dolor earum vel dolorum beatae.</p>
-    <hr>
-
-    <!-- Comments -->
-
-    <h3>Comments - Not display in the browser</h3> <!-- Header -->
-    <hr>
-
-    
-    <!-- Formatting HTML Tags -->
-    <h1 style = "text-align:center;">Formatting HTML Tags </h1>
-
-    <h1>Abbrivation - abbr</h1>
-    <h3>Author of <abbr title="Hyper Text Markup Language">HTML</abbr></h3>
-    <hr>
-
-    <h1>Address - address</h1>
-    <address>
-        Written by <a href="mailto:webmaster@example.com">Bharath Waj</a>.<br>
-        Visit us at: www.bharathwaj.me<br>
-        TN, IND
-    </address>
-    <hr>
-
-    <!-- Bold Text -->
-    <h1>Bold Text - b</h1>
-    <p>Freedom lies in being <b> Bold.</b></p>
-    <hr>
-
-    <!-- Bi_directional -->
-    <h1>Bi-Directional - bdi</h1>
-    <ul>
-        <li>User <bdi>bharath</bdi>: 60 points</li>
-        <li>User <bdi>jdoe</bdi>: 80 points</li>
-        <li>User <bdi>إيان</bdi>: 90 points</li>
-    </ul>
-    <hr>
-
-    <!-- Bi_directional Override -->
-    <h1>Bi-Directional Override - bdo</h1>
-    <p>This is a normal line.</p>
-    <bdo dir="rtl">This is modified line.</bdo>
-    <hr>
-
-    <!-- Blockquote -->
-    <h1>Blockquote - blockquote</h1>
-    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolores eveniet nostrum aliquam a perferendis, repudiandae fugit velit dicta temporibus consectetur hic. Impedit architecto magni cum ducimus quo reprehenderit accusamus!</blockquote>
-    <hr>
-
-    <!-- Cite --> 
-    <!-- It defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.). -->
-    <h1>Cite - cite</h1>
-    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
-    <hr>
-
-    <!-- Code -->
-    <!-- It is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font. -->
-    <h1>Code - code</h1>
-    <p>The HTML <code>button</code> tag defines a clickable button.</p>
-    <hr>
-
-    <!-- Delete -->
-    <!-- It defines text that has been deleted from a document. Browsers will usually strike a line through deleted text. -->
-    <h1>Delete - del</h1>
-    <p>My favorite color is <del>blue</del> <ins>pink</ins>!</p>
-    <hr>
-
-    <!-- Definition Tag -->
-    <h1>Definition - dfn</h1>
-    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
-    <hr>
-
-    <!-- Emphasized text  -->
-    <h1>Emphasized text - em</h1>
-    <p>You <em>have</em> to hurry up!</p>
-    <hr>
-
-    <!-- Italic -->
-    <h1>Italic - i</h1>
-    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
-    <hr>
-
-    <!-- Inserted Text -->
-    <h1>Inserted Text - ins</h1>
-    <p>My favorite color is <del>blue</del> <ins>pink</ins>!</p>
-    <hr>
-
-    <!-- Keyboard Input -->
-    <h1>Keyboard Input - kbd</h1>
-    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
-    <hr>
-
-    <!-- Mark -->
-    <h1>Mark - mark</h1>
-    <p>Do not forget to buy <mark>milk</mark> today.</p>
-    <hr>
-
-    <!-- Meter -->
-    <h1>Meter - meter</h1>
-    <label for="disk_d">Disk usage D:</label>
-    <meter id="disk_d" value="0.6">60%</meter>
-    <hr>
-
-    <!-- Preformatted Text -->
-    <h1>Preformatted Text - pre</h1>
-    <pre>
-        Text in a pre element
-        is displayed in a fixed-width
-        font, and it preserves
-        both      spaces and
-        line breaks
-    </pre>
-    <hr>
-
-    <!-- Progress -->
-    <h1>Progress Bar - progress</h1>
-    <label for="file">Downloading progress:</label>
-    <progress id="file" value="32" max="100"> 32% </progress>
-    <hr>
-
-    <!-- Quotation -->
-    <h1>Quotation - q</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <q>Quam optio adipisci amet iure laboriosam vitae quia esse nemo, libero sint obcaecati, quidem temporibus.</q> Quo placeat unde nemo cum ex! Necessitatibus.</p>
-    <hr>
-
-    <!-- Ruby Annotation -->
-    <h1>Ruby Annotation - ruby</h1>
-    <ruby>
-        漢 <rt> ㄏㄢˋ </rt>
-    </ruby>
-    <hr>
-
-    <!-- Strike through -->
-    <h1>Strike through - s</h1>
-    <s>Only 50 tickets left!</s>
-    <hr>
-
-    <!-- Sample output of a Computer Program -->
-    <h1>Sample outupt of a Computer Program - samp</h1>
-    <p><samp>File not found.<br>Press F1 to continue</samp></p>
-    <hr>
-
-    <!-- Smaller Text -->
-    <h1>Smaller text - small</h1>
-    <p>This is some normal text.<small> This is some smaller text.</small></p>
-    <hr>
-
-    <!-- Strong Text -->
-    <h1>Strong Text -strong</h1>
-    <strong>This text is important!</strong>
-    <hr>
-
-    <!-- Subscript -->
-    <h1>Subscript - sub</h1>
-    <p>X<sub>3</sub></p>
-    <hr>
-
-    <!-- Superscript -->
-    <h1>Superscript - sup</h1>
-    <p>X<sup>3</sup></p>
-    <hr>
-
-    <!-- Template -->
-    <h1>Template - template</h1>
-    <button onclick="showContent()">Show hidden content</button>
-    <template>
-        <h2>Thor</h2>
-        <img src="./Images/Thor.jpg" width="350" height="200">
-    </template>
-    
+    <!-- Events -->
+    <h1>On Click - onclick</h1>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
     <script>
-        function showContent() {
-            var temp = document.getElementsByTagName("template")[0];
-            var clon = temp.content.cloneNode(true);
-            document.body.appendChild(clon);
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
         }
     </script>
     <hr>
+
+    <!-- On Double Click -->
+    <h1>On Double Click - ondblclick</h1>
+    <button ondblclick="myFunction1()">Double-click me</button>
+    <p id="demo1"></p>
+    <script>
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = "Hello World";
+        }
+    </script>
+    <hr>
+
+
+    <!-- On Mouse Down -->
+    <h1>On Mouse Down - onmousedown</h1>
+    <p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus commodi possimus accusantium,
+        quaerat quos nobis doloremque deserunt quo eveniet excepturi non. Aspernatur atque illum laborum, nesciunt nisi
+        quam molestias?
+    </p>
+    <script>
+        function mouseDown() {
+            document.getElementById("p1").style.color = "red";
+        }
+
+        function mouseUp() {
+            document.getElementById("p1").style.color = "green";
+        }
+    </script>
+    <hr>
+
+    <!-- On Mouse Move -->
+    <h1>On Mouse Move - onmousemove</h1>
+    <img onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="./Images/Thor.jpg" alt="Smiley"
+        width="60" height="50">
+    <script>
+        function bigImg(x) {
+            x.style.height = "20px";
+            x.style.width = "30px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "100px";
+            x.style.width = "150px";
+        }
+    </script>
+    <hr>
+
+    <!-- On Mouse Over -->
+    <h1>On Mouse Over - onmouseover & onmouseout</h1>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="./Images/Thor.jpg" alt="Smiley"
+        width="32" height="32">
+    <script>
+        function bigImg(x) {
+            x.style.height = "64px";
+            x.style.width = "64px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "32px";
+            x.style.width = "32px";
+        }
+    </script>
+    <hr>
+
+    <!-- On Wheel -->
+    <h1>On Wheel - onwheel</h1>
+    <style>
+        #myDIV {
+            border: 1px solid black;
+        }
+    </style>
+
+    <div id="myDIV" onwheel="myFunction()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum
+        iusto aliquid sapiente, cumque sed placeat animi, ea perspiciatis est, dolor hic sunt ad? Architecto quaerat
+        necessitatibus ea nisi eligendi.</div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDIV").style.fontSize = "35px";
+        }
+    </script>
+    <hr>
+
+    <!-- Clipboard Events -->
+    <h1 style="text-align: center;">Clipboard Events</h1>
+
+    <!-- On Copy  -->
+    <h1>On Copy - oncopy</h1>
+    <input type="text" oncopy="copy()" value="Try to copy this text">
+    <p id="copy"></p>
+    <script>
+        function copy() {
+            document.getElementById("copy").innerHTML = "You copied text!"
+        }
+    </script>
+    <hr>
+
+    <h1>On Cut - oncut</h1>
+    <input type="text" oncut="myFunction()" value="Try to cut this text">
+    <p id="cut"></p>
+    <script>
+    function myFunction() {
+      document.getElementById("cut").innerHTML = "You cut text!";
+    }
+    </script>
+    <hr>
+
+    <h1>On Paste - onpaste</h1>
+    <input type="text" onpaste="myFunction()" value="Try to paste something in here" size="40">
+    <p id="paste"></p>
+    <script>
+    function myFunction() {
+      document.getElementById("paste").innerHTML = "You pasted text!";
+    }
+    </script>
+    <hr>
+
     
-    <!-- Time -->
-    <h1>Time - time</h1>
-    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
-    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
-    <hr>
-
-    <!-- Underline -->
-    <h1>Underline - u</h1>
-    <p>You should <u>Prove yourself</u></p>
-    <hr>
-
-    <!-- var -->
-    <h1>Variable - var</h1>
-    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
-    <hr>
-
-    <!-- Word Break -->
-    <h1>Word Break - wbr</h1>
-    <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
-    <hr>
-
-    <!-- Forms and Input -->
-    <h1 style="text-align: center;">Forms and Input</h1>
-    
-    <!-- Form -->
-    <h1>Form - form</h1>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-    </form>
-    <hr>
-
-    <!-- Input Tag -->
-    <h1>Input - input</h1>
-    <input type="text" id="fname" name="fname"><br><br>
-    <hr>
-
-    <!-- Textarea
-    <h1>Textarea - textarea</h1>
-    <textarea rows="2" cols="30">
-    <hr> -->
-
-    <!-- Button -->
-    <h1>Button - button</h1>
-    <button type="button" onclick="alert('Hai')">Click me!</button>
-    <hr>
-
-    <!-- Dropdown list -->
-    <h1>Dropdown List - select > option</h1>
-    <select name="social" id="social">
-        <option value="Twitter">Twitter</option>
-        <option value="Github">Github</option>
-        <option value="Git">Git</option>
-        <option value="Linkedin">Linkedin</option>
-    </select>
-    <hr>
-
-    <!-- Option & Option Group-->
-    <h1>Optiongroup - option & optgroup</h1>
-    <select name="social" id="social">
-        <optgroup label="Social Media">
-          <option value="Twitter">Twitter</option>
-          <option value="Linkedin">Linkedin</option>
-        </optgroup>
-        <optgroup label="Programmers">
-          <option value="Git">Git</option>
-          <option value="GitHub">GitHub</option>
-        </optgroup>
-    </select>
-    <hr>
-
-    <!-- Label -->
-    <h1>Label - label</h1>
-    <label for="name">Full name:</label>
-    <input type="text" id="fname" name="fname">
-    <hr>
-
-    <!-- Fieldset & Legend-->
-    <h1>Fieldset - fieldset & legend</h1>
-    <form action="/action_page.php">
-        <fieldset>
-          <legend>Personalia:</legend>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"><br><br>
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"><br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br><br>
-          <label for="birthday">Birthday:</label>
-          <input type="date" id="birthday" name="birthday"><br><br>
-          <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-
-    <!-- Datalist -->
-    <h1>Datalist -datalist</h1>
-    <label for="browser">Choose your browser from the list:</label><br>
-    <input list="browsers" name="browser" id="browser">
-    <datalist id="browsers">
-      <option value="Edge">
-      <option value="Firefox">
-      <option value="Chrome">
-      <option value="Opera">
-      <option value="Safari">
-    </datalist>
-    <input type="submit">
-    <hr>
-
-    <!-- Output -->
-    <h1>Output - output</h1>
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <input type="range" id="a" value="50">
-        +<input type="number" id="b" value="25">
-        =<output name="x" for="a b"></output>
-    </form>
-    <hr>
-
-
-    <!-- Frames -->
-    <h1 style="text-align: center">Frames</h1>
-
-    <!-- iframe -->
-    <h1>iframe - iframe</h1>
-    <iframe src="https://www.w3schools.com/" title="W3Schools Free Online Web Tutorials">
-    </iframe>
-    <hr>
 
 
 
@@ -372,5 +170,37 @@
 
 
 
-</body>     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
 </html>
